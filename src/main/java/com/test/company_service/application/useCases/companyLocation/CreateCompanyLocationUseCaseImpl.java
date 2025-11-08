@@ -5,6 +5,8 @@ import com.test.company_service.domain.ports.in.companyLocation.CreateCompanyLoc
 import com.test.company_service.domain.ports.out.companyLocation.CompanyLocationRepositoryPort;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 public class CreateCompanyLocationUseCaseImpl implements CreateCompanyLocationUseCase {
 
@@ -13,5 +15,10 @@ public class CreateCompanyLocationUseCaseImpl implements CreateCompanyLocationUs
     @Override
     public CompanyLocation create(CompanyLocation companyLocation) {
         return companyLocationRepositoryPort.create(companyLocation);
+    }
+
+    @Override
+    public List<CompanyLocation> createSeveral(List<CompanyLocation> companyLocations) {
+        return companyLocationRepositoryPort.createSeveral(companyLocations);
     }
 }

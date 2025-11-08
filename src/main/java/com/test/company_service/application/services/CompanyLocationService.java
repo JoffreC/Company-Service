@@ -23,6 +23,11 @@ public class CompanyLocationService implements CreateCompanyLocationUseCase, Ret
     }
 
     @Override
+    public List<CompanyLocation> createSeveral(List<CompanyLocation> companyLocations) {
+        return createCompanyLocationUseCase.createSeveral(companyLocations);
+    }
+
+    @Override
     public void delete(Long id) {
         deleteCompanyLocationUseCase.delete(id);
     }
