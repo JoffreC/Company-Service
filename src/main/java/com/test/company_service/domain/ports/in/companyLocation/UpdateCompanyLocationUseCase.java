@@ -1,0 +1,8 @@
+package com.test.company_service.domain.ports.in.companyLocation;
+
+import com.test.company_service.domain.models.Company;
+import com.test.company_service.domain.models.CompanyLocation;
+
+public interface UpdateCompanyLocationUseCase {
+    CompanyLocation update(CompanyLocation companyLocation);
+}
