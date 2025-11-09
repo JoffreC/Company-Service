@@ -109,4 +109,4 @@ The API will be available at:
 ## 📘 API Documentation (Swagger / OpenAPI)
 Swagger UI
 
-👉 http://localhost:8080/swagger-ui.html
+👉 http://localhost:8080/swagger-ui/index.html
