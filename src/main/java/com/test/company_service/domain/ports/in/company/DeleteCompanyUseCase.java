@@ -1,7 +1,6 @@
 package com.test.company_service.domain.ports.in.company;
 
-import com.test.company_service.domain.models.Company;
-
+// Delete Use Case
 public interface DeleteCompanyUseCase {
     void delete(Long id);
 }

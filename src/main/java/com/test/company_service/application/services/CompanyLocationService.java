@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
+// Service to access all company location use cases.
 @RequiredArgsConstructor
 public class CompanyLocationService implements CreateCompanyLocationUseCase, RetrieveCompanyLocationUseCase, UpdateCompanyLocationUseCase, DeleteCompanyLocationUseCase {
 
@@ -35,6 +36,11 @@ public class CompanyLocationService implements CreateCompanyLocationUseCase, Ret
     @Override
     public CompanyLocation retrieveById(Long id) {
         return retrieveCompanyLocationUseCase.retrieveById(id);
+    }
+
+    @Override
+    public List<CompanyLocation> retrieveByCompanyId(Long companyId) {
+        return retrieveCompanyLocationUseCase.retrieveByCompanyId(companyId);
     }
 
     @Override

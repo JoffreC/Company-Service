@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
+// Implementation
 @RequiredArgsConstructor
 public class RetrieveCompanyLocationUseCaseImpl implements RetrieveCompanyLocationUseCase {
 
@@ -15,6 +16,11 @@ public class RetrieveCompanyLocationUseCaseImpl implements RetrieveCompanyLocati
     @Override
     public CompanyLocation retrieveById(Long id) {
         return companyLocationRepositoryPort.retrieveById(id);
+    }
+
+    @Override
+    public List<CompanyLocation> retrieveByCompanyId(Long companyId) {
+        return companyLocationRepositoryPort.retrieveByCompanyId(companyId);
     }
 
     @Override

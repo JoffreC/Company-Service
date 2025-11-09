@@ -5,6 +5,7 @@ import com.test.company_service.domain.ports.in.companyLocation.UpdateCompanyLoc
 import com.test.company_service.domain.ports.out.companyLocation.CompanyLocationRepositoryPort;
 import lombok.RequiredArgsConstructor;
 
+// Implementation
 @RequiredArgsConstructor
 public class UpdateCompanyLocationUseCaseImpl implements UpdateCompanyLocationUseCase {
 

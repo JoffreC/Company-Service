@@ -3,6 +3,7 @@ package com.test.company_service.domain.models;
 import lombok.Builder;
 import lombok.Data;
 
+// Domain model
 @Data
 @Builder
 public class Company {

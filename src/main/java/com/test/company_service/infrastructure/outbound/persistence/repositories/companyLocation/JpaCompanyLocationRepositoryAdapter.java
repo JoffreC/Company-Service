@@ -15,9 +15,11 @@ import java.util.List;
 @Component
 public class JpaCompanyLocationRepositoryAdapter implements CompanyLocationRepositoryPort {
 
+    // Repositories injection
     private final JpaCompanyLocationRepository jpaCompanyLocationRepository;
     private final JpaCompanyRepository jpaCompanyRepository;
 
+    // Company location port use cases implementation
     @Override
     public CompanyLocation create(CompanyLocation companyLocation) {
         CompanyLocationEntity companyLocationEntity = CompanyLocationEntity.fromModel(companyLocation);
@@ -42,6 +44,14 @@ public class JpaCompanyLocationRepositoryAdapter implements CompanyLocationRepos
         return jpaCompanyLocationRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Company Location not found"))
                 .toModel();
+    }
+
+    @Override
+    public List<CompanyLocation> retrieveByCompanyId(Long companyId) {
+        return jpaCompanyLocationRepository.findByCompanyId(companyId)
+                .stream()
+                .map(CompanyLocationEntity::toModel)
+                .toList();
     }
 
     @Override

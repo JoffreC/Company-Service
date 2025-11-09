@@ -30,7 +30,7 @@ public class CompanyLocationEntity {
     private String country;
 
     @ManyToOne()
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "company_id")
     private CompanyEntity company;
 
     public static CompanyLocationEntity fromModel(CompanyLocation companyLocation) {
@@ -52,6 +52,7 @@ public class CompanyLocationEntity {
                 .city(city)
                 .province(province)
                 .country(country)
+                .companyId(company.getId())
                 .build();
     }
 }

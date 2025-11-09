@@ -4,6 +4,7 @@ import com.test.company_service.domain.models.CompanyLocation;
 
 import java.util.List;
 
+// Create Use Case
 public interface CreateCompanyLocationUseCase {
     CompanyLocation create(CompanyLocation companyLocation);
     List<CompanyLocation> createSeveral(List<CompanyLocation> companyLocations);

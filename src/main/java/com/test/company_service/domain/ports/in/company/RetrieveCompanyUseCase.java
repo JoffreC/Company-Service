@@ -4,6 +4,7 @@ import com.test.company_service.domain.models.Company;
 
 import java.util.List;
 
+// Retrieve Use Case
 public interface RetrieveCompanyUseCase {
     Company retrieveById(Long id);
     List<Company> retrieveAll();

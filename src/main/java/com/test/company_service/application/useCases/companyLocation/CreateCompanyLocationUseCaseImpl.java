@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
+// Implementation
 @RequiredArgsConstructor
 public class CreateCompanyLocationUseCaseImpl implements CreateCompanyLocationUseCase {
 

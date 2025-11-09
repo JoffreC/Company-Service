@@ -4,6 +4,7 @@ import com.test.company_service.domain.ports.in.companyLocation.DeleteCompanyLoc
 import com.test.company_service.domain.ports.out.companyLocation.CompanyLocationRepositoryPort;
 import lombok.RequiredArgsConstructor;
 
+// Implementation
 @RequiredArgsConstructor
 public class DeleteCompanyLocationUseCaseImpl implements DeleteCompanyLocationUseCase {
 

@@ -13,8 +13,10 @@ import java.util.List;
 @Component
 public class JpaCompanyRepositoryAdapter implements CompanyRepositoryPort {
 
+    //Inject Repository
     private final JpaCompanyRepository jpaCompanyRepository;
 
+    // Company port use cases implementation
     @Override
     public Company create(Company company) {
         CompanyEntity companyEntity = CompanyEntity.fromModel(company);
@@ -47,6 +49,11 @@ public class JpaCompanyRepositoryAdapter implements CompanyRepositoryPort {
     @Override
     public void delete(Long id) {
         jpaCompanyRepository.deleteById(id);
+    }
+
+    @Override
+    public Boolean validate(Long id) {
+        return jpaCompanyRepository.existsById(id);
     }
 
     private CompanyEntity updateAttributes(CompanyEntity companyEntity, Company company) {
