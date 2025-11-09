@@ -88,13 +88,13 @@ Migrations are executed automatically on application startup.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/company-service.git
+git clone https://github.com/JoffreC/Company-Service.git
 cd company-service
 ```
 
 ### 2️⃣ Configure Environment
 
-Create a .env file with your database and external service variables (see example above).
+Create a .env file with your database and external service variables (see example above). Don't forget to create your database in PostgreSQL.
 
 ### 3️⃣ Build and Run
 
