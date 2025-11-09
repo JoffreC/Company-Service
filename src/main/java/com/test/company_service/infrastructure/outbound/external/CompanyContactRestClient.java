@@ -14,7 +14,7 @@ public class CompanyContactRestClient implements CompanyContactRepositoryPort {
     private final WebClient webClient;
 
     public CompanyContactRestClient(WebClient.Builder builder,
-                                    @Value("${company.service.url}") String baseUrl) {
+                                    @Value("${contact.service.url}") String baseUrl) {
         this.webClient = builder.baseUrl(baseUrl).build();
     }
 

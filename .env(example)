@@ -1,4 +1,4 @@
 DB_CONNECTION={DbUrl}
 DB_USERNAME={DbUsername}
 DB_PASSWORD={DbPassword}
-COMPANY_URL={UrlToContactController}
+CONTACT_URL={UrlToContactController}
